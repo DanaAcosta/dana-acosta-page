@@ -1,0 +1,120 @@
+.publications {
+  padding: 6rem 0;
+  background-color: var(--bg-color);
+}
+
+.publications-container {
+  width: 50%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.publications-title {
+  font-family: 'Unbounded', cursive;
+  font-size: 2.2rem;
+  color: var(--title-color);
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.publication-item {
+  margin-bottom: 3rem;
+}
+
+.publication-title {
+  font-family: 'Arvo', serif;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.4rem;
+}
+
+.publication-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 0.8rem;
+}
+
+.publication-desc {
+  max-width: 75ch;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+.publication-link {
+  font-size: 0.9rem;
+  color: var(--button-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .publications {
+    padding: 4rem 0;
+  }
+
+  .publications-title {
+    font-size: 1.8rem;
+  }
+
+  .publication-desc {
+    text-align: Justify;
+  }
+}
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: Justify;
+  gap: 1rem;
+}
+
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.publication-tags span {
+  background-color: var(--button-color);
+  color: #1a1a1a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.publication-link {
+  position: relative;
+}
+
+.publication-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 140%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  width: max-content;
+  max-width: 260px;
+}
+
+.publication-link:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .publication-link::after {
+    display: none;
+  }
+}

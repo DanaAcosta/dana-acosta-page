@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Arvo:wght@400;700&family=Amaranth:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --bg-color: #5603ad;
+  --secondary-color: #bc95e3;
+  --button-color: #b3e9c7;
+  --title-color: #c2f8cb;
+  --text-color: #f0fff1;
+}
+
+
+body {
+  font-family: 'Amarna';
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Unbounded', cursive;
+  color: var(--title-color);
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Arvo', serif;
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 1rem;
+  max-width: 70ch;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: 'Arvo', serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+nav a {
+  font-weight: 600;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--button-color);
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+button,
+.btn {
+  background-color: var(--button-color);
+  color: #1a1a1a;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* TABLET (≤ 1024px) */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  nav {
+    gap: 1.5rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}
+
+/* CELULAR (≤ 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 95%;
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* CELULAR PEQUEÑO (≤ 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}

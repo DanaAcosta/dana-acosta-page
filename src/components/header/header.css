@@ -1,0 +1,74 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.hero-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Unbounded', cursive;
+  font-size: 3rem;
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-family: 'Arvo', serif;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 60ch;
+  margin: 0 auto 2.5rem;
+}
+
+/* BOTONES */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn.primary {
+  background-color: var(--button-color);
+  color: #1a1a1a;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+}
+
+.btn.secondary:hover {
+  background-color: var(--button-color);
+  color: #1a1a1a;
+}

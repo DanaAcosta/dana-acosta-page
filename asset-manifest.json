@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/DanaAcosta/dana-acosta-page/static/css/main.f2c75892.css",
+    "main.js": "/DanaAcosta/dana-acosta-page/static/js/main.bc6e1894.js",
+    "static/media/circuit.png": "/DanaAcosta/dana-acosta-page/static/media/circuit.f3f80e0ffb0e8158e99b.png",
+    "index.html": "/DanaAcosta/dana-acosta-page/index.html",
+    "main.f2c75892.css.map": "/DanaAcosta/dana-acosta-page/static/css/main.f2c75892.css.map",
+    "main.bc6e1894.js.map": "/DanaAcosta/dana-acosta-page/static/js/main.bc6e1894.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2c75892.css",
+    "static/js/main.bc6e1894.js"
+  ]
+}

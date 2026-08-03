@@ -6,6 +6,23 @@ const Cv = () => {
       <div className="experience-container">
 
         <h2 className="experience-title">Experiencia</h2>
+
+        {/* GLOBANT - GUT */}
+        <div className="experience-item">
+          <h3>Globant - GUT</h3>
+          <p className="experience-meta">
+            Data Analyst & Martech Trainee · Bogotá · Abril 2026 – Presente
+          </p>
+
+          <p>
+            Apoyo en proyectos de análisis de datos y marketing technology (MarTech),
+            participando en la recopilación, transformación y visualización de datos
+            para la generación de insights. Colaboración en la creación de dashboards,
+            automatización de procesos y análisis de métricas para apoyar la toma de
+            decisiones de negocio.
+          </p>
+        </div>
+
         {/* MINCIT */}
         <div className="experience-item">
           <h3>Ministerio de Comercio, Industria y Turismo (MINCIT)</h3>
@@ -14,9 +31,9 @@ const Cv = () => {
           </p>
 
           <p>
-            Trabaje en análisis, procesamiento y visualización de datos para el
+            Trabajé en análisis, procesamiento y visualización de datos para el
             seguimiento de programas y beneficiarios en el sector público.
-            Desarrollo de mapas, dashboards y herramientas de apoyo a la toma de
+            Desarrollé mapas, dashboards y herramientas de apoyo para la toma de
             decisiones, con especial atención al manejo de la información.
           </p>
         </div>
@@ -34,12 +51,12 @@ const Cv = () => {
             tecnología, integrando enfoques interdisciplinarios.
           </p>
         </div>
-        <div className="experience-image">
-              <img src="./assets/cv.png" alt="Experiencia profesional" />
-            </div>
-      </div>
-    
 
+        <div className="experience-image">
+          <img src="./assets/cv.png" alt="Experiencia profesional" />
+        </div>
+
+      </div>
     </section>
   );
 };

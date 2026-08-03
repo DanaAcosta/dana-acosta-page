@@ -21,7 +21,7 @@ const About = () => {
 
             <p>
               Soy profesional en <strong>Matemáticas Aplicadas y Ciencias de la Computación</strong>,
-              graduada en 2023, y actualmente continúo mi formación en <strong>Filosofía</strong>.
+              graduada en 2023, y próximamente profesional en <strong>Filosofía</strong>.
               Tengo experiencia en análisis, modelado y visualización de datos, trabajando con
               información para apoyar la toma de decisiones.
             </p>
